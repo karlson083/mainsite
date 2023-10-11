@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            margin: 0;
+        }
+        .container {
+            max-width: 1920px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 150px 50px 50px 50px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 30px;
+            margin: 0 0 100px 0;
+        }
+        .flex_img {
+            display: flex;
+            justify-content: space-between;
+            gap: 35px;
+        }
+        .img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 950px) {
+            .container {
+                padding: 70px 50px 50px 50px;
+            }
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 70px 20px 50px 20px;
+            }
+            h1 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 25px;
+                margin: 0 0 50px 0;
+            }
+            .flex_img {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+        }
+        @media (max-width: 510px) {
+            h1 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 22px;
+            }
+        }
+        @media (max-width: 460px) {
+            h1 {
+                font-size: 30px;
+            }
+        }
+        @media (max-width: 405px) {
+            h1 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex_img">
+            <div class="img-box">
+                <a href="http://ha.karlson083.online" target="_blank"><img class="img" src="img/HomeAssistant.png" alt="HomeAssistant" ></a>
+            </div>
+            <div class="img-box">
+                <a href="http://jenkins.karlson083.online:8080" target="_blank"><img class="img" src="img/jenkins.png" alt="Jenkins"></a>
+            </div>
+            <div class="img-box">
+                <a href="http://npm.karlson083.online" target="_blank"><img class="img" src="img/nginxproxymanager.png" alt="nginxproxymanager"></a>
+            </div>
+            <div class="img-box">
+                <a href="http://wgcons.karlson083.online" target="_blank"><img class="img" src="img/wireguard.jpg" alt="wireguard"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
